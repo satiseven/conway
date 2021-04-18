@@ -1,5 +1,6 @@
 import React, { useCallback } from "react";
 import { produce } from "immer";
+import back from "./img/back.png";
 const numRows = 50;
 const numColumns = 50;
 const App: React.FC = () => {
@@ -89,7 +90,7 @@ const App: React.FC = () => {
               style={{
                 height: "20px",
                 width: "20px",
-                backgroundColor: grid[ri][ci] ? "pink" : undefined,
+                background: grid[ri][ci] ? "url('" + back + "')" : undefined,
                 border: "solid 1px black",
               }}
             />
